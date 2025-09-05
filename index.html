@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Fada do Dente - Dra. Dafne Momberg</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background-color: #fdfcf9;
+      color: #333;
+    }
+    header {
+      background: linear-gradient(to right, #f7f2e9, #fff);
+      padding: 20px;
+      text-align: center;
+      border-bottom: 3px solid #d4af37;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5em;
+      color: #6b4226;
+    }
+    header p {
+      margin: 5px 0;
+      color: #d4af37;
+      font-weight: bold;
+    }
+    nav {
+      background-color: #6b4226;
+      padding: 10px;
+      text-align: center;
+      position: sticky;
+      top: 80px;
+      z-index: 999;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 15px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #d4af37;
+    }
+    .container {
+      max-width: 1100px;
+      margin: 20px auto;
+      padding: 20px;
+    }
+    .about, .contact, .gallery, .form {
+      margin-bottom: 40px;
+    }
+    .about h2, .contact h2, .gallery h2, .form h2 {
+      color: #6b4226;
+      border-bottom: 2px solid #d4af37;
+      display: inline-block;
+      margin-bottom: 15px;
+    }
+    .gallery img {
+      width: 45%;
+      margin: 10px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form label {
+      display: block;
+      margin: 10px 0 5px;
+      font-weight: bold;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 15px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+    form button {
+      background-color: #6b4226;
+      color: #fff;
+      padding: 10px 20px;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    form button:hover {
+      background-color: #d4af37;
+      color: #333;
+    }
+    .map-container iframe {
+      width: 100%;
+      height: 300px;
+      border: none;
+      border-radius: 10px;
+    }
+    .whatsapp-float {
+      position: fixed;
+      width: 60px;
+      height: 60px;
+      bottom: 20px;
+      right: 20px;
+      background-color: #25d366;
+      color: #fff;
+      border-radius: 50%;
+      text-align: center;
+      font-size: 30px;
+      box-shadow: 2px 2px 5px rgba(0,0,0,0.3);
+      z-index: 100;
+    }
+    .whatsapp-float i {
+      margin-top: 15px;
+    }
+    footer {
+      background-color: #6b4226;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 40px;
+    }
+  </style>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+  <header>
+    <h1>✨ Fada do Dente ✨</h1>
+    <p>Dra. Dafne Momberg - Cirurgiã Dentista</p>
+  </header>
+
+  <nav>
+    <a href="#sobre">Sobre</a>
+    <a href="#galeria">Antes e Depois</a>
+    <a href="#form">Agendamento</a>
+    <a href="#contato">Contato</a>
+  </nav>
+
+  <div class="container">
+    <section id="sobre" class="about">
+      <h2>Sobre</h2>
+      <p>Na <strong>Fada do Dente</strong>, transformamos sorrisos com carinho e dedicação. A Dra. Dafne Momberg atua com foco em estética dental e cuidados personalizados para cada paciente, sempre prezando pelo conforto e pela qualidade no atendimento.</p>
+    </section>
+
+    <section id="galeria" class="gallery">
+      <h2>Antes e Depois</h2>
+      <div>
+        <img src="159c8e74-9523-446c-a475-08a492326c0b.png" alt="Foto paciente">
+        <img src="3ace0866-ec1f-459e-a0eb-ff2a64290545.png" alt="Antes e Depois 1">
+        <img src="75324136-6459-496d-81dd-1e507b272456.png" alt="Antes e Depois 2">
+      </div>
+    </section>
+
+    <section id="form" class="form">
+      <h2>Agende sua Consulta</h2>
+      <form id="agendamentoForm">
+        <label for="nome">Nome:</label>
+        <input type="text" id="nome" name="nome" required>
+
+        <label for="telefone">Telefone:</label>
+        <input type="text" id="telefone" name="telefone" required>
+
+        <label for="mensagem">Mensagem:</label>
+        <textarea id="mensagem" name="mensagem" rows="4" required></textarea>
+
+        <button type="submit">Agendar pelo WhatsApp</button>
+      </form>
+    </section>
+
+    <section id="contato" class="contact">
+      <h2>Contato</h2>
+      <p><strong>Telefone:</strong> <a href="https://wa.me/5515998486144" target="_blank">(15) 99848-6144</a></p>
+      <p><strong>Endereço:</strong> R. Newton Prado, 449 - Vila Hortência, Sorocaba - SP, 18020-210</p>
+      <p><strong>Instagram:</strong> <a href="https://instagram.com/fada.do.dentee" target="_blank">@fada.do.dentee</a></p>
+      <p><strong>Horário de Funcionamento:</strong> Seg a Sex - 08:00 às 22:00</p>
+      <div class="map-container">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3657.34758391936!2d-47.45652!3d-23.49677!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94c58ab43f52d6df%3A0xa8129a6a0106c3b1!2sR.%20Newton%20Prado%2C%20449%20-%20Vila%20Hort%C3%AAncia%2C%20Sorocaba%20-%20SP%2C%2018020-210!5e0!3m2!1spt-BR!2sbr!4v1694453624691!5m2!1spt-BR!2sbr" allowfullscreen="" loading="lazy"></iframe>
+      </div>
+    </section>
+  </div>
+
+  <a href="https://wa.me/5515998486144" class="whatsapp-float" target="_blank">
+    <i class="fab fa-whatsapp"></i>
+  </a>
+
+  <footer>
+    <p>&copy; 2025 Fada do Dente - Dra. Dafne Momberg. Todos os direitos reservados.</p>
+  </footer>
+
+  <script>
+    document.getElementById('agendamentoForm').addEventListener('submit', function(event) {
+      event.preventDefault();
+      let nome = document.getElementById('nome').value;
+      let telefone = document.getElementById('telefone').value;
+      let mensagem = document.getElementById('mensagem').value;
+      let url = `https://wa.me/5515998486144?text=Olá, meu nome é ${nome}. Telefone: ${telefone}. Mensagem: ${mensagem}`;
+      window.open(url, '_blank');
+    });
+  </script>
+
+</body>
+</html>
